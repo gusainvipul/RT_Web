@@ -45,6 +45,7 @@ test('test', async ({ page }) => {
 
   await page.getByText('Economy Class').click();
   await page.getByRole('option', { name: 'First Class' }).click();
+  
   await page.getByRole('button', { name: 'Search' }).click();
   await page.getByText('Searching flights').click();
   await page.getByText(/^Sort by /).click();
